@@ -78,7 +78,7 @@ public class JitsiMeetViewManager extends SimpleViewManager<RNJitsiMeetView> {
 
     try {
       builder.setServerURL(
-        new URL(options.hasKey("serverUrl") ? options.getString("serverUrl") : "https://meet.jit.si"));
+        new URL(options.hasKey("serverUrl") ? options.getString("serverUrl") : "https://app.meet-yard.com"));
     } catch (MalformedURLException e) {
       throw new RuntimeException("Server url invalid");
     }
